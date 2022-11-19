@@ -1,16 +1,26 @@
 html {
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-fluid{
+  width: 100%;
+}
+  @media(max-width: 992px){
+ 
+    .linhaMenu{
+      display: none;
+  }
+  }
+  
+  @media(max-width: 533.34px){
+    .botao-menus:hover{
+      color:#9B3737;
+      font-size: 1em;
+      transition: 0.5s;
+    }
   }
   
 
-  
-  html {
-    position: relative;
-    min-height: 100%;
-    min-width: 90%;
-  }
-  
   body {
     margin-bottom: 60px;
     background-color: #FDFDFD;
@@ -35,13 +45,11 @@ html {
   }
 
   .navbar-nav li{
-    margin-right: 4em;
+    margin-right: 3em;
+    width: 100%;
   }
 
   .navbar-nav .menus{
-    margin-right: 3em;
-    width: 5em;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,23 +57,22 @@ html {
   }
 
   .botao-menus{
-    display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     text-decoration: none;
+    font-weight: 350;
     letter-spacing: 0.01em;
     color:#626262;
   }
 
   .botao-menus:hover{
     color:#9B3737;
-    font-size: 17px;
+    font-size: 1.1em;
     transition: 0.5s;
   }
 
   .menus-items{
-    margin-left: 1.5em;
     width: 32px;
     height: 32px;
   }
@@ -75,8 +82,6 @@ html {
     font-weight: 650;
     color:#9B3737;
     font-size: 20px;
-    vertical-align: middle;
-    display: table-cell;    
     width: 180px;
     height: 53px;
     border-radius: 25px;
@@ -84,6 +89,11 @@ html {
     border-color: #9B3737;
     transform: 0.5s;
   }
+
+.menus{
+  width: 100%;
+  align-items: center;
+}
 
   .botaoLoginPrincipal:hover{
     width:185px;
