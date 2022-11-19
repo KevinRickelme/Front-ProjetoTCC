@@ -90,6 +90,14 @@ html {
     transform: 0.5s;
   }
 
+  .botaoLoginPrincipal:active{
+    width:185px !important;
+    background-color:#9B3737 !important;
+    border-color: red !important;
+    color:white !important;
+    transition: 0.5s !important;
+  }
+
 .menus{
   width: 100%;
   align-items: center;
