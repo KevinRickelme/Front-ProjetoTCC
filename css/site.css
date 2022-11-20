@@ -1,8 +1,16 @@
 html {
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 92% !important;
 }
+
+.htmlLayout{
+  width: 92% !important;
+}
+
+.container-body{
+  width: 92% !important;
+}
+
 .container-fluid{
   width: 100%;
 }

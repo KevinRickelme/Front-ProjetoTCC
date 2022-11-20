@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html class="htmlLayout" lang="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjetoFatec</title>
     <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="./css/user-body.css" asp-append-version="true" />
     <link rel="stylesheet" href="./ProjetoFatec.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
-    <header>
+    <div class="container-fluid">
 
-
+        <!-- Quando for passar para C# remover essa navbar-->
         <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-white box-shadow mb-3 abc">
             <div class="container-fluid">
                 <div class="logo-SI3">
@@ -47,27 +49,94 @@
                                 <line x1="1.5" y1="6.55671e-08" x2="1.5" y2="80" stroke="#EDEDED" stroke-width="3"/>
                             </svg>
                         </li>
-                        <li class="nav-link menus">
-                            <a class="btn btn-primary botaoLoginPrincipal" aria-current="page" href="./Cadastro.html">
-                                <img src="imgs/microsoft-logo.svg"> Entrar
-                            </a>
-                        </li>
                     </ul>
                 </div>
 
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            <iframe src="Body.html" style="width: 110%; height:2110px;" title="corpo"></iframe>
-        </main>
     </div>
+
+    <div class="container-fluid mainDiv">
+        <div class="container-fluid textos-cadastro">
+            <p class="home-title titulo-cadastro">
+                Olá, <strong>KEVIN</strong>!
+            </p>
+            <p class="home-title subtitulo-cadastro">
+                Notamos que este é seu primeiro acesso.
+            </p>
+            <p class="legenda legenda-cadastro">
+                Para acessar a plataforma, preencha alguns dados pessoais primeiro.
+            </p>
+        </div>
+
+        <div class="container-fluid div-formulario-cadastro">
+            <form class="row g-3 form-cadastro">
+                <div class="col-md-6">
+                  <label for="label labelPrimeiroNome" class="form-label">Primeiro Nome*</label>
+                  <input type="text" class="form-control input inputPrimeiroNome" id="inputPrimeiroNome" placeholder="João">
+                </div>
+                <div class="col-md-6">
+                  <label for="label labelSobreNome" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control input" id="input inputSobrenome">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Email</label>
+                  <input type="text" class="form-control input inputEmail" id="inputAddress" placeholder="seuemail@fatec.sp.gov.br" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="label labelTelefone" class="form-label">Telefone</label>
+                    <div class="row">
+                    <div class="col-4">
+                      <input type="text" class="form-control input inputDDD" id="inputDDD" placeholder="11">
+                    </div>  
+                    <div class="col-8">
+                        <input type="text" class="form-control input inputTelefone" id="inputTelefone" placeholder="912345678">
+                      </div> 
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                  <label for="label labelDataNascimento" class="form-label">Data de Nascimento*</label>
+                  <input type="date" class="form-control input" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="label labelSexo" class="form-label">Sexo* </label>
+                  <select id="inputCurso" class="form-select input inputSexo">
+                    <option selected>Selecione...</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                  </select>
+                </div>
+                <div class="col-md-8">
+                  <label for="label labelCurso" class="form-label">Curso</label>
+                  <select id="inputCurso" class="form-select input inputCurso">
+                    <option selected>Selecione...</option>
+                    <option>Análise e Desenvolvimento de Sistemas</option>
+                    <option>Comércio Exterior</option>
+                    <option>Gestão da Produção Industrial</option>
+                    <option>Gestão Empresarial</option>
+                    <option>Logística</option>
+                    <option>Logística Aeroportuária</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="label labelSemestreAtual" class="form-label">Semestre Atual*</label>
+                  <input type="text" class="form-control input inputSemestreAtual" id="inputSemestreAtual" placeholder="5">
+                </div>
+
+                <div class="col-12 d-flex justify-content-center">
+                  <a href="./HomeLayout.html" class="btn btn-primary botaoLogin" id="botaoCadastrar">Continuar</a>
+                  <!-- Quando colocar no backend tirar o <a> e colocar o <button>
+                    <button type="submit" class="btn btn-primary botaoLogin" id="botaoCadastrar">Continuar</button>
+                  -->
+                </div>
+              </form>
+        </div>
+    </div>
+
 
 
     <script src="./lib/jquery/dist/jquery.min.js"></script>
     <script src="./lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/site.js" asp-append-version="true"></script>
-    
 </body>
 </html>
