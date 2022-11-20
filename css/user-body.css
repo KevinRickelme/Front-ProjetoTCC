@@ -1,15 +1,20 @@
 html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
+    width: 100%;
 }
 section{
     margin-top:2em;
+    
 }
 
 
 @media(max-width: 992px){
     .imagem{
         display: none;
+    }
+    section{
+        margin-right: 3em;
     }
 }
 
@@ -91,12 +96,13 @@ section{
     font-size: 2em;
     text-decoration: none;
     font-weight: 300;
+    margin: 0 auto;
 }
 
 #descricao3{
     margin-top:3em;
 }
 
-#divTextoHome2{
+#divTextoHome2, #divTextoHome3{
     margin-left: 2em;
 }
