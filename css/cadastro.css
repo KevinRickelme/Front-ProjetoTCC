@@ -3,8 +3,12 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100% !important;
 }
-
-@media(max-width:992px){
+@media(max-width: 1093px){
+    .form-label{
+        font-size: 15px !important;
+    }
+}
+@media(max-width:1025px){
     html{
         font-size: 20px !important;
     }
@@ -31,7 +35,8 @@ html {
     width: 50%;
     height: 100% !important;
     padding: 0;
-    padding-top: 5%;
+    padding-top: 3%;
+    font-size: 0.8em;
     
 }
 
@@ -49,27 +54,47 @@ html {
 }
 
 .legenda-cadastro{
-    margin-top: 3em;
+    margin-top: 1em;
+    font-size: 1.5em;
     line-height: 1;
     font-weight: 350;
 }
 
 .input{
     border-style: none;
+    height: 3em;
     background-color: #ebebeb !important;
 }
 
 .form-cadastro{
     text-align: left;
+    margin-left: -3em !important;
+    margin-right: -3em !important;
 }
 .form-cadastro label{
     font-size: 1.2em;
     color: #8E8E8E;
 }
+
+.form-cadastro div{
+    margin-top: 2em;
+}
+
 .div-formulario-cadastro{
     width: 80%;
+    height: 50em !important;
     margin: 0 auto;
     margin-top:3em;
+}
+
+.labelLegendas{
+    color:#c0c0c0 !important;
+    font-size: 1.3em !important;
+}
+
+.labelLegendas1{
+    color:#c0c0c0 !important;
+    font-size: 1em !important;
 }
 
 .form-nome{
@@ -80,8 +105,12 @@ html {
     background-color: #E0E0E0 !important;
 }
 
+.divtelefone{
+    margin-top: -2em !important;
+}
+
 label{
-    font-size: 100% !important;
+    font-size: 20px !important;
 }
 
 #botaoCadastrar{
@@ -92,7 +121,8 @@ label{
     font-size: 15px;   
     padding: 0  ;
     width: 274px;
-    height: 30px;
+    height: 40px;
+    align-items: center;
     border-radius: 25px;
     background-color: transparent;
     border-color: #9B3737;
