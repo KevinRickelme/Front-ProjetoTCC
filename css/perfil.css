@@ -1,0 +1,150 @@
+* {
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    color:#838383;
+}
+.divPerfil{
+    display:flex;
+    align-items:flex-start;
+    padding: 0 !important;
+}
+.divPostagens{
+    max-width: 50%;
+}
+.divPerfilMaior{
+    width: 100%;
+    height: 200px;
+}
+.perfilMaior{
+    
+    align-items: center;
+    justify-content: center;
+}
+.divPicPostagem.perfil{
+    width: 150px;
+    height: 150px;
+}
+.pic-postagem.perfil{
+    width: 15em;
+}
+
+.divInfoPerfil{
+    max-width: 50%;
+    height: 100%;
+    padding: 0;
+    margin-top:2%;
+    display: flex;
+}
+
+.perfilInfosPrincipal{
+    margin-top:2%;
+}
+
+@media(max-width: 1120px) {
+    .divPerfil{
+        display:inline;
+    }
+    .divInfoPerfil{
+        max-width: 100%;
+    }
+    .divPostagens{
+        max-width: 100%;
+    }
+}
+
+.divCurso{
+    height: 100px;
+    width: 75%;
+    margin-left:0;
+    margin-right: auto;
+    padding:10px  0 0 20px;
+}
+.divSemestre{
+    width: 20%;
+    margin-left:auto;
+    margin-right: 0;
+    padding:10px  0 0 20px;    
+}
+.divSemestre p{
+    text-align: center;
+    padding-top: 0;
+    padding-right: 20%;
+}
+.divSobre{
+    height: 200px;
+    width: 100%;
+    margin-top: 2%;
+    padding:10px  20px 10px 20px;
+    text-align: justify;
+}
+
+.divSobre p, .divCurso p{
+    margin-top: 3%;
+}
+.nomeSemestre{
+    margin-top: 10%;
+}
+
+.divAmigos{
+    height: 500px;
+    width: 100%;
+    margin-top: 2%;
+    padding:10px  20px 10px 20px;
+}
+.quantidade-amigos{
+    padding:10px 0px 0px 10px;
+}
+
+.perfilInfos{
+    border-radius:24px;
+}
+
+.divHomePrincipal, .divHomePrincipalPostagens{
+    display: block !important;
+    width: 100%;
+}
+
+.divPostagemInfos{
+    padding-bottom: 1%;
+}
+
+.curso,.semestre,.sobre, .amigos{
+    font-weight: 600;
+    font-size: 18px;
+    color:#757575;
+  }
+
+ .post-nome.perfil{
+    font-size: 45px;
+ }
+
+ .post-amigos{
+    color:#757575;
+ }
+
+ .post-bio{
+    margin-top:1%;
+    color:#838383;
+    font-size: 18px;
+ }
+
+ .textoPublicacoes{
+    background-color: #F1F1F1;
+    margin-top:2%;
+    width: 100%;
+    height: 50px;
+    border-radius: 24px;
+    text-align: center;
+    display: table;
+ }
+ .publicacoes{
+    vertical-align: middle;
+    height: 100%;
+    display: table-cell;
+    font-size: 30px;
+    font-weight: 200;
+    color:#b3b3b3;
+ }

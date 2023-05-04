@@ -4,6 +4,42 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.upload_dropZone {
+  color: #9B3737;
+  outline: 2px dashed #9B3737;
+  outline-offset: -12px;
+  transition: outline-offset 0.2s ease-out, outline-color 0.3s ease-in-out, background-color 0.2s ease-out;
+}
+
+
+  .upload_dropZone.highlight {
+      outline-offset: -4px;
+      outline-color: #9B3737;
+      background-color: #9B3737;
+  }
+
+.upload_svg {
+  fill: #9B3737;
+}
+
+.btn-upload {
+  color: #fff;
+  background-color: #9B3737;
+}
+
+  .btn-upload:hover,
+  .btn-upload:focus {
+      color: #fff;
+      background-color: #9B3737;
+  }
+
+.upload_img {
+  width: calc(100% - (2rem / 2));
+  object-fit: contain;
+}
+
+
+
 @media(max-width: 641px) {
   html {
       width: 100%;
@@ -50,19 +86,19 @@ a {
 }
 
 .searchArea {
-  width: 20em;
+  width: 300px;
   height: 3em;
   border-radius: 100px;
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 2%;
-  align-items: left;
+  margin-left: auto;
+  margin-right: 15%;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
-  .searchArea:focus {
-      width: 24em;
-      transition: all 0.5s ease-in-out;
-  }
+
+
 
 .divProfile {
   width: 15em;
@@ -74,6 +110,7 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 100%;
+  margin-left:0;
 }
 
 .btn-profile {
@@ -159,7 +196,7 @@ a {
 /* Parte do index Home */
 .divHomePrincipal, .divHomePrincipalPostagens {
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 25px;
   display: flex;
   width: 45%;
 }
@@ -170,29 +207,34 @@ main {
 }
 
 .divPost {
-  width: 75%;
-  height: 10em;
+  width: 100%;
+  height: 136px;
   margin-top: 2%;
   border-radius: 24px;
   align-items: center;
-  padding-right: 3%;
+  padding-right: 50px;
+  padding-left: 50px;
   background-color: white;
+  display: flex;
 }
 
 .divPoste {
-  width: 77%;
+  width: 100%;
   height: 100%;
   border-radius: 24px;
+  margin-top:2%;
+  padding-top:1%;
 }
 
 .divPostar {
-  width: 85%;
+  width: 90%;
   height: 50%;
   display: flex;
   align-items: center;
   border-radius: 100px;
   font-size: 1.5em;
   padding-left: 5%;
+  margin-left: 10px;
   background-color: white;
 }
 
@@ -204,7 +246,7 @@ main {
   border-radius: 24px;
   margin-bottom: 2%;
   display: flex;
-  padding-left: 2%;
+  padding:0 5% 0 5%;
   background-color: white;
 }
 
@@ -223,24 +265,17 @@ main {
   }
 
 .divPicPostagem {
-  padding-left: 5%;
-  padding-top: 5%;
+  
+  width: 80px;
+  height: 80px;
 }
 
 .pic-post {
-  width: 100%;
+  width: 100PX;
   height: 100%;
 }
 
-.pic-postagem {
-  width: 6em;
-  height: 6em;
-}
 
-.divPicPostagem {
-  width: 9em;
-  height: 9em;
-}
 
 
 footer {
@@ -249,7 +284,6 @@ footer {
 
 .divPostagemInfo {
   padding-left: 5%;
-  padding-top: 5%;
 }
 
 .post-nome {
@@ -259,13 +293,11 @@ footer {
 }
 
 .post-curso {
-  padding-top: 0.5%;
   color: #A6A6A6;
   font-size: 100%;
 }
 
 .post-tempo {
-  padding-top: 0.5%;
   color: #A6A6A6;
   font-size: 100%;
 }
@@ -284,11 +316,8 @@ footer {
   }
 
 .botoesPost {
-  width: 80%;
   padding-top: 2%;
   margin-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
   align-items: left;
 }
 
@@ -296,7 +325,9 @@ footer {
 .modal-dialog {
   width: 80%;
 }
-
+.divPostagemInfos{
+  padding: 0 5% 0 5%;
+}
 .post-btnLike, .post-btnComentar, .post-btnCompartilhar {
   background-color: #fafafa;
   border-radius: 1vh;
@@ -373,4 +404,68 @@ hr {
   margin-top: 3%;
   border-radius: 10px;
   border-top: 5% solid #a7a7a7;
+}
+
+/*Seção comentários*/
+
+.pic-post.comentario {
+  width: 10em;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0.3em;
+}
+
+.divComentariosPrincipal {
+  height: auto;
+  width: 100%;
+  background-color: #fafafa;
+  margin-left:0;
+  margin-right:auto;
+  padding:0;
+}
+.divComentarios {
+  margin-right: 0px;
+  margin-left: auto;
+  width: 88%;
+  padding: 0;
+}
+
+.post-nome.comentario {
+  font-size: 1em;
+
+}
+.post-tempo.comentario {
+  font-size: 0.8em;
+
+  
+}
+.post-curso.comentario {
+  font-size: 0.8em;
+}
+.post-comentarios.comentario {
+  font-size: 1em;
+  padding-top: 2%;
+  margin-left: 2%;
+  width: 95%;
+  text-align: justify;
+}
+
+div.divPicPostagem.comentario {
+  width: 10%;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.divPic{
+  margin-left:0;
+  margin-right: auto;
+  width: 15% !important;
+}
+
+.hr{
+  color:#bebebe;
+  background-color: #bebebe ;
+  height: 2px;
+  border-radius: 100px;
 }

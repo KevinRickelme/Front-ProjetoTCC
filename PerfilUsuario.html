@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="./css/user-body.css" asp-append-version="true" />
     <link rel="stylesheet" href="./css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="./css/perfil.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
@@ -81,70 +82,113 @@
                     </div>
                 </div>
             </nav>
-    </div>
-    
-    </header>
-    <main>
-        <div class="container divHomePrincipal">
-            <div class="container-fluid divPost justify-content-between">
-                <div class="col divPic">
-                    <img class="img-fluid profile-pic pic-post" id="dropdownBotao" src="./imgs/kevin.jpg">
-                </div>
-                <a class="row divPostar" href="#" data-bs-toggle="modal" data-bs-target="#modalPostagem">
-                    Criar publicação
-                </a>
-            </div>
-    
-            
-    
         </div>
-    
-        <div class="container divHomePrincipalPostagens">
-            <div class="container-fluid divPoste"  style="background-color:white;">
-                <div class="row-4 divPostagem" href="#">
-                    <div class="col-1 divPicPostagem">
-                            <img class="img-fluid profile-pic pic-post col pic-postagem" id="dropdownBotao" src="./imgs/perfil.png">
-                    </div>
-                    <div class="row divPostagemInfo">
-                        <a class="post-nome row">Kevin Rickelme Marques da Silva</a>
-                        <a class="post-curso row">Análise e Desenvolvimento de Sistemas, 5</a>
-                        <a class="post-tempo row">15 min</a>
-
-                        </div>
-                        </div>
-                        <div class="row-col-4 divPostagemInfos">
-                        <p class="post-conteudo row">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                        <img src="imgs/2Screenshot 2023-03-13 131650.png" class="img img-fluid mx-auto d-block img-post">
-                        <hr class="hr">
-                        <a class="post-qtdLike col"><span class=" fa-regular fa-heart"></span> 0 Likes</a>
-
-                        <div class="row divPostagem divComentariosPrincipal">
-                          <div class="row-1 divPicPostagem comentario">
-                              <img class="img-fluid profile-pic pic-post row pic-postagem comentario" id="dropdownBotao" src="./imgs/perfil.png">
-                          </div>
-                          <div class="row divComentarios">
-  
-                              <a class="row post-nome comentario">Kevin Rickelme Marques da Silva</a>
-                              <a class="row post-curso comentario">Análise e Desenvolvimento de Sistemas</a>
-                              <a class="post-tempo row comentario">1 hora atrás </a>
-                              </div>
-                              <p class="row post-comentarios comentario">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dictum tortor, eget vehicula justo. Nam rhoncus mi vitae ex fermentum, in vel.</p>
-                              
-                          </div>  
-                        <div class="botoesPost row">
-                            <a class="btn post-btnLike col">
-                                <span class=" fa-regular fa-heart"></span> Gostei
-                            </a>
-                            <a class="btn post-btnComentar col"> <span class=" fa-regular fa-comment"></span> Comentar</a>
-                            <a class="btn post-btnCompartilhar col"><span class=" fa-solid fa-share"></span> Compartilhar</a>
-                        </div>
-                    </div> 
-                    </div>
-                    
+        
+        </header>
+        <main>
+            <div class="container divPerfilMaior">
+              <div class="row-4 divPostagem perfilMaior" href="#">
+                <div class="col-2 divPicPostagem perfil">
+                        <img class="img-fluid profile-pic pic-post col pic-postagem perfil" id="dropdownBotao" src="./imgs/perfil.png">
                 </div>
-
+                <div class="col-8 divPostagemInfo perfil">
+                    <a class="post-nome perfil row">Kevin Rickelme Marques da Silva</a>
+                    <a class="post-amigos perfil row">2 amigos</a>
+                    <a class="post-bio perfil row">Estudante do sexto semestre, apaixonado por astronomia e jogos.  </a>
                     
+
+                    </div>
+                    </div>
+        
+                
+        
             </div>
+        
+            <div class="row-4 container divPerfil">
+              <div class="container perfilInfosPrincipal">
+                <div class="row CursoSemestre">
+                  <div class="container-fluid col-4 divCurso perfilInfos"  style="background-color:white;">
+                    <a class="curso">Curso</a>
+                    <p class="nomeCurso">Análise e Desenvolvimento de Sistemas</p>
+                  </div>
+                  <div class="container-fluid col-2 divSemestre perfilInfos"  style="background-color:white;">
+                    <a class="semestre">Semestre</a>
+                    <p class="nomeSemestre">6</p>
+                  </div>  
+                </div>
+                <div class="row divSobrePrincipal">
+                  <div class="container-fluid col-6 divSobre perfilInfos"  style="background-color:white;">
+                    <a class="sobre">Sobre</a>
+                    <p class="nomeSobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in urna lacinia ipsum malesuada vulputate ut at orci. Nunc blandit euismod lectus, eget varius urna interdum sit amet. Donec dapibus cursus ullamcorper. Nam volutpat at lacus ac consectetur. Nunc non pulvinar orci. Proin sapien elit, mattis dapibus metus in, sodales sagittis quam. Nulla nibh orci, mollis vel mauris ac, sodales commodo odio. Suspendisse potenti. Cras sit amet metus eget orci porta pellentesque. Ut commodo posuere est.</p>
+                  </div> 
+                </div>
+                <div class="row divAmigosPrincipal">
+                  <div class="container-fluid col divAmigos perfilInfos"  style="background-color:white;">
+                    <a class="amigos">Amigos</a>
+                    <a class="quantidade-amigos row">2 amigos</a>
+                  </div> 
+                </div>  
+              </div>
+
+              
+              <div class="row-4 container divPostagens">
+                <div class="container divHomePrincipal">
+                  <div class="container-fluid divPost justify-content-between">
+                      <div class="col divPic">
+                          <img class="img-fluid profile-pic pic-post" id="dropdownBotao" src="./imgs/kevin.jpg">
+                      </div>
+                      <a class="row divPostar" href="#" data-bs-toggle="modal" data-bs-target="#modalPostagem">
+                          Criar publicação
+                      </a>
+                  </div>
+                  <div class="textoPublicacoes">
+                    <p class="publicacoes">Publicações</p>
+                  </div>
+                  <div class="container-fluid divPoste"  style="background-color:white;">
+                      <div class="row-4 divPostagem" href="#">
+                          <div class="col-1 divPicPostagem">
+                                  <img class="img-fluid profile-pic pic-post col pic-postagem" id="dropdownBotao" src="./imgs/perfil.png">
+                          </div>
+                          <div class="row divPostagemInfo">
+                              <a class="post-nome row">Kevin Rickelme Marques da Silva</a>
+                              <a class="post-curso row">Análise e Desenvolvimento de Sistemas, 5</a>
+                              <a class="post-tempo row">15 min</a>
+
+                              </div>
+                              </div>
+                              <div class="row-col-4 divPostagemInfos">
+                              <p class="post-conteudo row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in urna lacinia ipsum malesuada vulputate ut at orci. Nunc blandit euismod lectus, eget varius urna interdum sit amet. Donec dapibus cursus ullamcorper. Nam volutpat at lacus ac consectetur. Nunc non pulvinar orci.</p>
+                              <img src="imgs/29wallpapersden.com_lost-in-random-game_3840x2160.jpg" class="img img-fluid mx-auto d-block img-post">
+                              <hr class="hr">
+                              <a class="post-qtdLike col"><span class=" fa-regular fa-heart"></span> 0 Likes</a>
+
+                              <div class="row divPostagem divComentariosPrincipal">
+                                <div class="row-1 divPicPostagem comentario">
+                                    <img class="img-fluid profile-pic pic-post row pic-postagem comentario" id="dropdownBotao" src="./imgs/perfil.png">
+                                </div>
+                                <div class="row divComentarios">
+        
+                                    <a class="row post-nome comentario">Kevin Rickelme Marques da Silva</a>
+                                    <a class="row post-curso comentario">Análise e Desenvolvimento de Sistemas</a>
+                                    <a class="post-tempo row comentario">1 hora atrás </a>
+                                    </div>
+                                    <p class="row post-comentarios comentario">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dictum tortor, eget vehicula justo. Nam rhoncus mi vitae ex fermentum, in vel.</p>
+                                    
+                                </div>  
+                              <div class="botoesPost row">
+                                  <a class="btn post-btnLike col">
+                                      <span class=" fa-regular fa-heart"></span> Gostei
+                                  </a>
+                                  <a class="btn post-btnComentar col"> <span class=" fa-regular fa-comment"></span> Comentar</a>
+                                  <a class="btn post-btnCompartilhar col"><span class=" fa-solid fa-share"></span> Compartilhar</a>
+                              </div>
+                          </div> 
+                          </div>
+                          
+              </div>
+          </div>
+                    
+            
         </div>
         
         <!-- Modal -->
