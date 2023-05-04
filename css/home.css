@@ -37,9 +37,6 @@ html {
   width: calc(100% - (2rem / 2));
   object-fit: contain;
 }
-
-
-
 @media(max-width: 641px) {
   html {
       width: 100%;
