@@ -227,7 +227,7 @@ main {
 }
 
 .divPostar {
-  width: 90%;
+  width: 75%;
   height: 50%;
   display: flex;
   align-items: center;
@@ -461,6 +461,8 @@ div.divPicPostagem.comentario {
   margin-left:0;
   margin-right: auto;
   width: 15% !important;
+  display: grid;
+  justify-content: center;
 }
 
 .hr{
